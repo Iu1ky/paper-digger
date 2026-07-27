@@ -79,8 +79,10 @@ Windows 可运行同样的 Python 入口：
 python scripts/install_skills.py --agent cursor --scope user
 ```
 
-维护者测试未发布改动时可加 `--from-local`；普通用户应保留默认的 GitHub
-来源，这样 `gh skill update` 能追踪 tag 和 commit。
+维护者测试未发布改动时可加 `--from-local`。默认远程安装会先解析一次最新
+release，再把 7 个 skill 固定到同一个 tag，避免安装过程中版本漂移；升级时
+重新运行安装器并加 `--force`。若希望改为跟随最新版本，可运行
+`gh skill update --unpin --all`。
 
 也可直接用 `gh skill install Iu1ky/paper-digger` 进入交互式选择。
 

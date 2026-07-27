@@ -10,7 +10,7 @@
       "name": "paper-digger",
       "source": "./plugins/paper-digger",
       "description": "Seven portable skills plus a research orchestrator agent and local runtime.",
-      "version": "0.1.2",
+      "version": "0.1.3",
       "license": "Apache-2.0"
     }
   ]

@@ -1,4 +1,5 @@
 import importlib.util
+import subprocess
 from pathlib import Path
 
 SCRIPT = Path(__file__).parent.parent / "scripts" / "install_skills.py"
@@ -65,3 +66,35 @@ def test_only_network_like_failures_are_retried():
     assert _is_transient_failure("read: connection reset by peer")
     assert _is_transient_failure("HTTP 503 Service Unavailable")
     assert not _is_transient_failure("unknown skill name")
+
+
+def test_install_retries_four_transient_failures_without_replaying_noise(
+    monkeypatch, tmp_path, capsys
+):
+    outcomes = [
+        subprocess.CompletedProcess(
+            ["gh"], 1, stdout="", stderr="read: connection reset by peer\n"
+        )
+        for _ in range(4)
+    ]
+    outcomes.append(
+        subprocess.CompletedProcess(["gh"], 0, stdout="installed\n", stderr="")
+    )
+    calls = []
+    sleeps = []
+
+    def fake_run(*args, **kwargs):
+        calls.append((args, kwargs))
+        return outcomes.pop(0)
+
+    monkeypatch.setattr(install_skills.subprocess, "run", fake_run)
+    monkeypatch.setattr(install_skills.time, "sleep", sleeps.append)
+
+    install_skills._run_install(["gh", "skill", "install"], tmp_path)
+
+    captured = capsys.readouterr()
+    assert len(calls) == 5
+    assert sleeps == [1, 2, 4, 8]
+    assert captured.err.count("Transient GitHub failure") == 4
+    assert "connection reset by peer" not in captured.err
+    assert captured.out == "installed\n"

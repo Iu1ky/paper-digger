@@ -2,6 +2,14 @@
 
 All notable changes to Paper Digger are documented here.
 
+## [0.1.3] - 2026-07-27
+
+- Retry transient GitHub install failures up to six times with bounded
+  exponential backoff.
+- Suppress repeated network error payloads during retry to keep install logs
+  compact.
+- Document pinned-release upgrade and unpin behavior.
+
 ## [0.1.2] - 2026-07-27
 
 - Reduce projected always-on Claude plugin context from about 669 to 386

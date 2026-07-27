@@ -7,6 +7,7 @@ import argparse
 import shutil
 import subprocess
 import sys
+import time
 from pathlib import Path
 
 ROOT = Path(__file__).resolve().parents[1]
@@ -118,7 +119,7 @@ def _resolve_pin(gh: str, repository: str, requested: str | None) -> str:
     )
 
 
-def _run_install(command: list[str], cwd: Path, attempts: int = 3) -> None:
+def _run_install(command: list[str], cwd: Path, attempts: int = 6) -> None:
     for attempt in range(1, attempts + 1):
         completed = subprocess.run(
             command,
@@ -127,19 +128,26 @@ def _run_install(command: list[str], cwd: Path, attempts: int = 3) -> None:
             capture_output=True,
             check=False,
         )
+        if completed.returncode == 0:
+            if completed.stdout:
+                print(completed.stdout, end="")
+            if completed.stderr:
+                print(completed.stderr, end="", file=sys.stderr)
+            return
+        message = f"{completed.stdout}\n{completed.stderr}"
+        if attempt < attempts and _is_transient_failure(message):
+            delay = min(2 ** (attempt - 1), 8)
+            print(
+                f"Transient GitHub failure; retrying in {delay}s "
+                f"({attempt + 1}/{attempts})...",
+                file=sys.stderr,
+            )
+            time.sleep(delay)
+            continue
         if completed.stdout:
             print(completed.stdout, end="")
         if completed.stderr:
             print(completed.stderr, end="", file=sys.stderr)
-        if completed.returncode == 0:
-            return
-        message = f"{completed.stdout}\n{completed.stderr}"
-        if attempt < attempts and _is_transient_failure(message):
-            print(
-                f"Transient GitHub failure; retrying ({attempt + 1}/{attempts})...",
-                file=sys.stderr,
-            )
-            continue
         raise subprocess.CalledProcessError(completed.returncode, command)
 
 

@@ -21,7 +21,7 @@ before tagging. When developing inside Codex, also run the bundled
 
 ## GitHub and Agent Skills
 
-`gh skill publish --tag v0.1.2` validates the skills, adds the
+`gh skill publish --tag v0.1.3` validates the skills, adds the
 `agent-skills` repository topic when approved, and creates the GitHub release.
 Upload the generated plugin archive and `SHA256SUMS` to that release.
 
