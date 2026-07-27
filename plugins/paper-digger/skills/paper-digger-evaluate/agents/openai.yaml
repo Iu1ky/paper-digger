@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Digger Evaluate"
+  short_description: "Red-team research value, rigor, and integrity"
+  default_prompt: "Use $paper-digger-evaluate to issue an evidence-backed go, revise, pivot, or stop verdict at the current checkpoint."

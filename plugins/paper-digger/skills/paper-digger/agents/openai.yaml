@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Digger"
+  short_description: "Checkpoint-gated research from idea to submission"
+  default_prompt: "Use $paper-digger to start or resume a checkpoint-gated research project from idea to submission."

@@ -1,0 +1,20 @@
+{
+  "name": "paper-digger",
+  "interface": {
+    "displayName": "Paper Digger"
+  },
+  "plugins": [
+    {
+      "name": "paper-digger",
+      "source": {
+        "source": "local",
+        "path": "./plugins/paper-digger"
+      },
+      "policy": {
+        "installation": "AVAILABLE",
+        "authentication": "ON_INSTALL"
+      },
+      "category": "Developer Tools"
+    }
+  ]
+}

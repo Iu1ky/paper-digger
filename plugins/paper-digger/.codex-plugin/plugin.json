@@ -1,0 +1,40 @@
+{
+  "name": "paper-digger",
+  "version": "0.1.0",
+  "description": "Checkpoint-gated academic research orchestration from direction discovery to verified submission artifacts.",
+  "author": {
+    "name": "Iu1ky",
+    "url": "https://github.com/Iu1ky"
+  },
+  "homepage": "https://github.com/Iu1ky/paper-digger",
+  "repository": "https://github.com/Iu1ky/paper-digger",
+  "license": "Apache-2.0",
+  "keywords": [
+    "academic-research",
+    "agent-skills",
+    "experiments",
+    "paper-writing",
+    "research-integrity"
+  ],
+  "skills": "./skills/",
+  "interface": {
+    "displayName": "Paper Digger",
+    "shortDescription": "Checkpoint-gated research from idea to submission",
+    "longDescription": "Plan and run an academic research project through explicit human checkpoints, falsifiable experiments, evidence verification, theory checks, drafting, review, revision, and final formatting.",
+    "developerName": "Iu1ky",
+    "category": "Developer Tools",
+    "capabilities": [
+      "Interactive",
+      "Write"
+    ],
+    "websiteURL": "https://github.com/Iu1ky/paper-digger",
+    "privacyPolicyURL": "https://github.com/Iu1ky/paper-digger/blob/main/PRIVACY.md",
+    "termsOfServiceURL": "https://github.com/Iu1ky/paper-digger/blob/main/TERMS.md",
+    "defaultPrompt": [
+      "Start a checkpoint-gated research project from my constraints.",
+      "Resume this Paper Digger workspace and tell me the next gate.",
+      "Red-team the current evidence and issue a go/no-go verdict."
+    ],
+    "brandColor": "#315C4B"
+  }
+}

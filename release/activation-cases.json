@@ -1,0 +1,46 @@
+{
+  "positive": [
+    {
+      "prompt": "我想从零开始找一个无线通信方向，最后做成可投稿论文。",
+      "expected_skill": "paper-digger"
+    },
+    {
+      "prompt": "Generate several research ideas, red-team their novelty, and help me pick one.",
+      "expected_skill": "paper-digger-ideate"
+    },
+    {
+      "prompt": "Compare these conferences and verify the official template and deadline.",
+      "expected_skill": "paper-digger-venue"
+    },
+    {
+      "prompt": "Turn this confirmed hypothesis into an experiment matrix with a cheap kill test.",
+      "expected_skill": "paper-digger-plan"
+    },
+    {
+      "prompt": "Audit these preliminary results for value, rigor, fabricated evidence, and tunnel vision.",
+      "expected_skill": "paper-digger-evaluate"
+    },
+    {
+      "prompt": "Run the approved minimum-validation experiment and record only verified evidence.",
+      "expected_skill": "paper-digger-experiment"
+    },
+    {
+      "prompt": "Prove this theorem from an explicit assumptions ledger and search for counterexamples.",
+      "expected_skill": "paper-digger-theory"
+    }
+  ],
+  "negative": [
+    {
+      "prompt": "Fix the TypeScript type error in this React component.",
+      "expected_skill": null
+    },
+    {
+      "prompt": "Translate this paragraph from English to Chinese.",
+      "expected_skill": null
+    },
+    {
+      "prompt": "What is the weather tomorrow?",
+      "expected_skill": null
+    }
+  ]
+}

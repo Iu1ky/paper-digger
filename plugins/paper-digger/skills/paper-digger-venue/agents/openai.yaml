@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Digger Venue"
+  short_description: "Compare venues and verify official templates"
+  default_prompt: "Use $paper-digger-venue to compare target venues and verify the selected venue's official template."

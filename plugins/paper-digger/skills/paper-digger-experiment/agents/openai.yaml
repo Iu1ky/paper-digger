@@ -1,0 +1,4 @@
+interface:
+  display_name: "Paper Digger Experiment"
+  short_description: "Run and verify experiments into an evidence bank"
+  default_prompt: "Use $paper-digger-experiment to execute the approved experiment plan and verify every result before use."

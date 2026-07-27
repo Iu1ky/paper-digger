@@ -1,0 +1,19 @@
+{
+  "name": "paper-digger",
+  "version": "0.1.0",
+  "description": "Checkpoint-gated academic research orchestration from direction discovery to verified submission artifacts.",
+  "author": {
+    "name": "Iu1ky",
+    "url": "https://github.com/Iu1ky"
+  },
+  "homepage": "https://github.com/Iu1ky/paper-digger",
+  "repository": "https://github.com/Iu1ky/paper-digger",
+  "license": "Apache-2.0",
+  "keywords": [
+    "academic-research",
+    "agent-skills",
+    "experiments",
+    "paper-writing",
+    "research-integrity"
+  ]
+}

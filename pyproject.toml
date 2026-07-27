@@ -1,0 +1,47 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "paper-digger"
+version = "0.1.0"
+description = "Checkpoint-gated academic research orchestration from idea to submission"
+readme = "README.md"
+requires-python = ">=3.11"
+license = "Apache-2.0"
+authors = [{ name = "Iu1ky" }]
+dependencies = []
+keywords = ["academic-research", "agent-skills", "research-integrity"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Environment :: Console",
+    "Intended Audience :: Science/Research",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3 :: Only",
+    "Topic :: Scientific/Engineering",
+]
+
+[project.optional-dependencies]
+dev = ["pytest>=8", "ruff>=0.6", "black>=24"]
+
+[project.scripts]
+pd = "paper_digger.cli:main"
+
+[project.urls]
+Homepage = "https://github.com/Iu1ky/paper-digger"
+Repository = "https://github.com/Iu1ky/paper-digger"
+Issues = "https://github.com/Iu1ky/paper-digger/issues"
+
+[tool.setuptools]
+package-dir = {"" = "plugins/paper-digger/skills/paper-digger/scripts"}
+packages = ["paper_digger"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+pythonpath = ["plugins/paper-digger/skills/paper-digger/scripts"]
+
+[tool.black]
+target-version = ["py311"]
+
+[tool.ruff]
+target-version = "py311"

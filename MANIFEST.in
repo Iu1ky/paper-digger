@@ -1,0 +1,6 @@
+include README.md
+include LICENSE
+include CHANGELOG.md
+recursive-include plugins/paper-digger *.json *.md *.py *.yaml
+global-exclude *.py[cod]
+global-exclude .DS_Store
