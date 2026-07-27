@@ -2,6 +2,13 @@
 
 All notable changes to Paper Digger are documented here.
 
+## [0.1.1] - 2026-07-27
+
+- Bound model fan-out with lean, standard, and deep effort modes.
+- Add compact resume context and artifact-backed metric summaries.
+- Pin all cross-agent installs to one resolved release and retry transient
+  network failures.
+
 ## [0.1.0] - 2026-07-27
 
 ### Added
