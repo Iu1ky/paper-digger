@@ -45,7 +45,7 @@ codex plugin add paper-digger@paper-digger
 ### Claude Code 插件
 
 ```bash
-claude plugin marketplace add Iu1ky/paper-digger
+claude plugin marketplace add https://github.com/Iu1ky/paper-digger.git
 claude plugin install paper-digger@paper-digger
 ```
 
