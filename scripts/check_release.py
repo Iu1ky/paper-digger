@@ -69,8 +69,8 @@ def check_skills() -> None:
             fail(f"{name}: frontmatter name does not match directory")
         if not fields["description"].startswith("Use when"):
             fail(f"{name}: description must begin with 'Use when'")
-        if len(fields["description"]) > 1024:
-            fail(f"{name}: description exceeds 1024 characters")
+        if len(fields["description"]) > 300:
+            fail(f"{name}: description exceeds the 300-character token budget")
         if len(body.splitlines()) > 500:
             fail(f"{name}: SKILL.md exceeds 500 lines")
 

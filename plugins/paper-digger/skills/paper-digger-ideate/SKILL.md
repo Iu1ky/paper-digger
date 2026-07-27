@@ -1,6 +1,6 @@
 ---
 name: paper-digger-ideate
-description: Use when finding or choosing a research direction or idea from scratch — generating candidate ideas from multiple angles, scoring them on novelty/feasibility/impact/fit, and converging to one or two to pursue. Triggers on 方向确定, idea发掘, 选题, 找研究方向, 确定idea, research ideation, brainstorm research ideas, what should I work on.
+description: Use when generating and selecting research ideas from constraints, literature gaps, and novelty/feasibility/impact scoring. Triggers on 选题, 找研究方向, idea发掘, research ideation.
 ---
 
 # Paper Digger Ideate — 方向确定与 idea 发掘(Phase 1)

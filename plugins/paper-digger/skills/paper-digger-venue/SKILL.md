@@ -1,6 +1,6 @@
 ---
 name: paper-digger-venue
-description: Use when choosing a target journal or conference for a confirmed research idea — comparing candidate venues on scope fit, tier, timeline and submission norms, and recording each venue's official template. Triggers on 确认目标期刊, 选刊, 选会议, target venue, which journal, which conference, venue selection, 投稿目标.
+description: Use when comparing journals or conferences for a confirmed idea and verifying scope, deadline, and official template. Triggers on 选刊, 选会议, target venue, 投稿目标.
 ---
 
 # Paper Digger Venue — 确认目标期刊/会议(Phase 2)

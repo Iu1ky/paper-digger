@@ -1,6 +1,6 @@
 ---
 name: paper-digger-plan
-description: Use when turning a confirmed idea and target venue into a research plan — hypotheses, an experiment matrix with one designated minimal-validation (kill-early) experiment, dependencies, and milestones. Triggers on 安排计划, 研究计划, 实验矩阵, experiment plan, research plan, what experiments, 最小验证, study design.
+description: Use when converting a confirmed idea and venue into falsifiable hypotheses, an experiment matrix, dependencies, and one kill-early test. Triggers on 研究计划, 实验矩阵, experiment plan, 最小验证.
 ---
 
 # Paper Digger Plan — 安排计划(Phase 4)

@@ -1,6 +1,6 @@
 ---
 name: paper-digger-evaluate
-description: Use when judging whether research work is worth continuing — at idea-confirmation, after minimal validation, at preliminary results, or at final results — scoring value/novelty/logic/level and screening for data fabrication, method fiction, citation hallucination, and fixed thinking. Triggers on 评价节点, 价值评估, 是否值得做, 是否低水平, 诚信稽核, research red-team, kill-early, go/no-go.
+description: Use when issuing a research go/revise/pivot/stop verdict from value, novelty, rigor, evidence integrity, and anti-fabrication checks. Triggers on 价值评估, 诚信稽核, research red-team, go/no-go.
 ---
 
 # Paper Digger Evaluate — 研究期价值与诚信红队

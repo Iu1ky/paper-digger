@@ -1,6 +1,6 @@
 ---
 name: paper-digger
-description: Use when starting, resuming, or coordinating a named Paper Digger workspace across multiple research phases or sessions, including project-wide checkpoints and research-to-submission progress. Triggers on start Paper Digger, resume Paper Digger, full research lifecycle, 全流程论文项目, 恢复 Paper Digger 项目, 跨阶段研究统筹.
+description: Use when starting or resuming a multi-phase Paper Digger workspace from research direction through submission. Triggers on resume Paper Digger, full research lifecycle, 全流程论文, 恢复研究项目.
 ---
 
 # Paper Digger — 学术研究全流程编排

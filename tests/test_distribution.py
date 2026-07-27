@@ -23,6 +23,8 @@ def test_distribution_has_exactly_seven_self_describing_skills():
     for name in EXPECTED:
         text = (SKILLS / name / "SKILL.md").read_text(encoding="utf-8")
         assert f"name: {name}" in text
+        description = text.splitlines()[2].removeprefix("description: ")
+        assert len(description) <= 300
         metadata = (SKILLS / name / "agents" / "openai.yaml").read_text(
             encoding="utf-8"
         )

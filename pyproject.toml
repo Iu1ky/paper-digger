@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "paper-digger"
-version = "0.1.1"
+version = "0.1.2"
 description = "Checkpoint-gated academic research orchestration from idea to submission"
 readme = "README.md"
 requires-python = ">=3.11"

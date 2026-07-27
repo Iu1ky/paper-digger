@@ -1,6 +1,6 @@
 ---
 name: paper-digger-experiment
-description: Use when running planned experiments — executing computational (dry) experiments, designing wet/physical protocols, collecting results into an evidence bank, and adversarially verifying them before they count. Triggers on 执行实验, 跑实验, run experiments, experiment execution, 实验编排, evidence bank, kill-early, 最小验证.
+description: Use when executing an approved experiment plan, recording artifact-backed metrics, and verifying evidence. Triggers on 跑实验, 执行实验, run experiments, evidence bank.
 ---
 
 # Paper Digger Experiment — 实验执行(Phase 5a)

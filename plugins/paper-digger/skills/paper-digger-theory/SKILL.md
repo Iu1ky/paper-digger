@@ -1,6 +1,6 @@
 ---
 name: paper-digger-theory
-description: Use when deriving or proving theoretical results — building an assumptions ledger, decomposing into lemmas, proving each step (or flagging it a conjecture), and validating with numerical/symbolic checks and counterexample search. Triggers on 理论推导, 证明, 定理, derivation, theorem, proof, lemma, 假设台账, 理论验证, theory.
+description: Use when deriving or proving theoretical results with explicit assumptions, lemmas, conjectures, and counterexample checks. Triggers on 理论推导, 证明, theorem, proof.
 ---
 
 # Paper Digger Theory — 理论推导(Phase 5b)
